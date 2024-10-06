@@ -44,15 +44,26 @@ body {
                  0 0 20px #ffffff;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 988px) {
     #header-title {
         margin-left: 40%;
     }
     
     #header-links {
-        float: none;
+        float: left;
         display: inline;
-        margin-left: 38%;
+        margin-left: 38.97%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    #header-title {
+        margin-left: 35%;
+    }
+
+    #header-links {
+        margin-left: 33%;
     }
 }
 
