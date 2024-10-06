@@ -14,34 +14,60 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
 }
 
 #header-title {
     margin-top: 30px;
-    margin-left: 300px;
     font-size: 24px;
+    margin-left: 300px;
+    float: left;
 }
 
 #header-links {
     margin-top: 30px;
-    margin-right: 300px;
     font-size: 20px;
+    margin-right: 300px;
+    float: right;
 }
 
 #header-links a {
     margin-right: 40px;
     text-decoration: none;
     color: #ffffff;
-    transition-duration: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 #header-links a:hover {
-    transition-duration: 0.3s;
     cursor: pointer;
     text-shadow: 0 0 10px #ffffff,
                  0 0 20px #ffffff;
+}
+
+@media screen and (max-width: 720px) {
+    #header-title {
+        margin-left: 40%;
+    }
+    
+    #header-links {
+        float: none;
+        display: inline;
+        margin-left: 38%;
+    }
+}
+
+@media screen and (max-width: 366px) {
+    #header-title {
+        margin-left: 24%;
+    }
+    #header-links {
+        display: block;
+        margin-left: 35%;
+    }
+
+    #header-links a {
+        margin-top: 10px;
+    }
 }
 
 .first {
@@ -74,7 +100,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    transition: border-color 0s ease-in-out;
+    transition: all 0s ease-in-out;
 }
 
 #first-button button:hover {
